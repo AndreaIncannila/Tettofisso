@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MP TENDE - Scheda Tecnica Tetto Fisso Space</title>
+  <title>MP TENDE - Scheda Tecnica Tetto Fisso SPACE</title>
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#1f4e8c">
   <style>
@@ -227,26 +227,26 @@
         <button class="primary" onclick="calcola()">Calcola</button>
         <button class="secondary" onclick="azzera()">Azzera</button>
         <button class="ghost" onclick="esempio()">Carica esempio</button>
-        <button class="pdf" onclick="window.print()">Genera PDF scheda tecnica</button>
+        <button class="pdf" onclick="window.print()">Genera PDF o STAMPA</button>
         <button id="installBtn" class="install" style="display:none;">Installa sul telefono</button>
       </div>
 
       <div class="inputs">
         <div class="field">
           <label for="larghezza">Larghezza (mm)</label>
-          <input id="larghezza" type="number" placeholder="3200" />
+          <input id="larghezza" type="number" placeholder="5000" />
         </div>
         <div class="field">
           <label for="profondita">Profondità (mm)</label>
-          <input id="profondita" type="number" placeholder="6000" />
+          <input id="profondita" type="number" placeholder="5000" />
         </div>
         <div class="field">
           <label for="hPost">Altezza posteriore (mm)</label>
-          <input id="hPost" type="number" placeholder="2770" />
+          <input id="hPost" type="number" placeholder="3000" />
         </div>
         <div class="field">
           <label for="hAnt">Altezza anteriore (mm)</label>
-          <input id="hAnt" type="number" placeholder="1950" />
+          <input id="hAnt" type="number" placeholder="2500" />
         </div>
       </div>
 
@@ -340,10 +340,10 @@
   function setText(id, value){ document.getElementById(id).textContent = value; }
 
   function esempio(){
-    document.getElementById('larghezza').value = 3200;
-    document.getElementById('profondita').value = 6000;
-    document.getElementById('hPost').value = 2770;
-    document.getElementById('hAnt').value = 1950;
+    document.getElementById('larghezza').value = 5000;
+    document.getElementById('profondita').value = 5000;
+    document.getElementById('hPost').value = 3000;
+    document.getElementById('hAnt').value = 2500;
     calcola();
   }
 
